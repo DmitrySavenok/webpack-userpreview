@@ -1,0 +1,10 @@
+.carousel-wrapper
+	ul.users
+		each user in users
+			li
+				p.first-name=user.first_name
+				p.age=user.age
+	.page-switch
+		button.prev-page(data-action="prev-page") <-
+		span.page-number
+		button.next-page(data-action="next-page") ->
